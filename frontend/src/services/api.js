@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const baseURL = import.meta.env.VITE_API_URL || "https://suavida-eight.vercel.app";
+const baseURL = import.meta.env.DEV 
+  ? "http://localhost:3000" 
+  : "https://suavida-eight.vercel.app";
 
 const api = axios.create({ baseURL });
 
