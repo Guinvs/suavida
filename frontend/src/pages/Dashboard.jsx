@@ -52,6 +52,11 @@ export default function Dashboard({ usuario, onLogout }) {
     carregarDados();
   }
 
+  async function deletarRegistro(id) {
+  await api.delete(`/registros/${id}`);
+  carregarDados();
+}
+
   function toggleHabito(nome) {
     setForm(prev => ({
       ...prev,
@@ -168,19 +173,25 @@ export default function Dashboard({ usuario, onLogout }) {
       </div>
 
       {/* Histórico */}
-      <div style={{ border: "1px solid #ddd", borderRadius: 8, padding: 24 }}>
-        <h2>📅 Histórico</h2>
-        {registros.length === 0 && <p>Nenhum registro ainda.</p>}
-        {registros.map(r => (
-          <div key={r.id} style={{ padding: 12, borderBottom: "1px solid #eee" }}>
-            <strong>{new Date(r.data).toLocaleDateString("pt-BR")}</strong>
-            <p>😊 Humor: {r.humor} | ⚡ Energia: {r.energia}</p>
-            {r.estudos && <p>📚 {r.estudos}</p>}
-            {r.notas && <p>📝 {r.notas}</p>}
-          </div>
-        ))}
+<div style={{ border: "1px solid #ddd", borderRadius: 8, padding: 24 }}>
+  <h2>📅 Histórico</h2>
+  {registros.length === 0 && <p>Nenhum registro ainda.</p>}
+  {registros.map(r => (
+    <div key={r.id} style={{ padding: 12, borderBottom: "1px solid #eee", display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+      <div>
+        <strong>{new Date(r.data).toLocaleDateString("pt-BR")}</strong>
+        <p>😊 Humor: {r.humor} | ⚡ Energia: {r.energia}</p>
+        {r.estudos && <p>📚 {r.estudos}</p>}
+        {r.notas && <p>📝 {r.notas}</p>}
       </div>
-
+      <button onClick={() => deletarRegistro(r.id)}
+        style={{ background: "none", border: "none", color: "#ef4444", cursor: "pointer", fontSize: 18 }}>
+        🗑️
+      </button>
     </div>
+  ))}
+</div>
+        
+      </div>
   );
 }

@@ -67,4 +67,17 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
+// 🔴 DELETAR registro
+router.delete("/:id", auth, async (req, res) => {
+  try {
+    await sql`
+      DELETE FROM registros 
+      WHERE id = ${req.params.id} AND usuario_id = ${req.usuario.id}
+    `;
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ erro: "Erro ao deletar registro." });
+  }
+});
+
 module.exports = router;
