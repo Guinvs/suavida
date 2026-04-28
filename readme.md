@@ -51,6 +51,8 @@ npm run dev
 Isso sobe o backend e o frontend ao mesmo tempo!
 <br>
 <br>
+## ⚙️ Exemplo de como funciona: 
+
 <img width="583" height="392" alt="image" src="https://github.com/user-attachments/assets/f9a17b39-befc-4265-9230-3531b0705dcf" />
 Tela de login.
 <br>
