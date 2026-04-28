@@ -58,7 +58,7 @@ Tela de login.
 <br>
 <br>
 <img width="1332" height="1043" alt="image" src="https://github.com/user-attachments/assets/e491ecf4-25f2-4975-8292-28c53392cf44" />
-Saudação + Registro do dia com informações produtivas.
+Saudação + Registro do dia com informações produtivas e nível de humor/energia.
 <br>
 <br>
 <img width="1015" height="398" alt="image" src="https://github.com/user-attachments/assets/de1c3c6f-6000-41eb-8a1e-5c402b1e0321" />
