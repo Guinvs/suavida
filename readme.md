@@ -50,17 +50,26 @@ npm run dev
 
 Isso sobe o backend e o frontend ao mesmo tempo!
 
+
+
 <img width="583" height="392" alt="image" src="https://github.com/user-attachments/assets/f9a17b39-befc-4265-9230-3531b0705dcf" />
 Tela de login.
+
+
 
 <img width="1332" height="1043" alt="image" src="https://github.com/user-attachments/assets/e491ecf4-25f2-4975-8292-28c53392cf44" />
 Saudação + Registro do dia com informações produtivas.
 
+
+
 <img width="1015" height="398" alt="image" src="https://github.com/user-attachments/assets/de1c3c6f-6000-41eb-8a1e-5c402b1e0321" />
 Meus hábitos (Se tenho cumprido cada um) + Histórico dos dias anotados. 
 
+
+
 <img width="1012" height="562" alt="image" src="https://github.com/user-attachments/assets/0271f4b8-c85e-4f12-8293-89c30fbdbbcc" />
 Histórico funcionando. 
+
 
 
 ## 👨‍💻 Autor
